@@ -1,0 +1,16 @@
+[package]
+name = "rusty"
+version = "0.1.0"
+authors = ["BlueGhostGH <engisoftleaderoff@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+dotenv = "0.15"
+serenity = { version = "0.10", default-features = false, features = [
+  "client",
+  "gateway",
+  "rustls_backend",
+  "model"
+] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
